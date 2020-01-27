@@ -32,13 +32,13 @@ RSpec.describe LogOutput do
 
   context '#total_views' do
     it 'returns list of webpages with most page views ordered from most pages views to less page views' do
-      expect(log_output.total_views).to match_array expected_total_views
+      expect(log_output.total_views).to eq expected_total_views
     end
   end
 
   context '#uniq_views' do
     it 'returns list of webpages with most unique page views ordered from most page views to less page views' do
-      expect(log_output.uniq_views).to match_array uniq_views
+      expect(log_output.uniq_views).to eq uniq_views
     end
   end
 end

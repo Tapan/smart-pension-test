@@ -11,22 +11,22 @@ RSpec.describe LogOutput do
   let(:log_processor) { LogProcessor.new(parser) }
   let(:expected_total_views) do
     [
-      'about 1 visits',
-      'about/2 2 visits',
-      'contact 2 visits',
+      'about/2 4 visits',
       'help_page/1 4 visits',
       'home 3 visits',
-      'index 1 visits'
+      'contact 2 visits',
+      'index 1 visits',
+      'about 1 visits'
     ]
   end
   let(:uniq_views) do
     [
-      'about 1 unique view',
-      'about/2 1 unique view',
-      'contact 1 unique view',
       'help_page/1 4 unique view',
       'home 3 unique view',
-      'index 1 unique view'
+      'about/2 2 unique view',
+      'contact 1 unique view',
+      'index 1 unique view',
+      'about 1 unique view'
     ]
   end
 
